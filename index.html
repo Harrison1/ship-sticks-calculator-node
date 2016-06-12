@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ship Sticks calculator question">
+    <meta name="author" content="Harrison McGuire">
+
+	<title>Ship Sticks Calculator</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+	
+    <!-- bootstrap style sheet -->
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' >
+
+    <!-- custom style sheet -->
+    <link rel='stylesheet' href='./css/main.css' >
+
+</head>
+<body>
+<header>
+ <!-- Navigation -->
+ <div class="row hidden-xs hidden-sm hidden-md" id="unscrolled-menu-wrapper" style="display: block;">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class='container'>
+                            <ul class="nav navbar-nav pull-right">
+                                <li>
+                                    <a class="right-nav" href="http://support.shipsticks.com/customer/en/portal/articles/1970301-becoming-a-partner" target="_blank">Become a partner</a>
+                                </li>
+                                <li>
+                                    <p class="right-nav separator">|  </p>
+                                </li>
+                                <li>
+                                    <a href="#" class="right-nav">Register</a>
+                                </li>
+                                <li>
+                                    <p class="right-nav separator">|  </p>
+                                </li>
+                                <li>
+                                    <a href="#" class="right-nav">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="/" id="centered-navbar-brand"><img alt="Logo" id="logo" src="./img/logo.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="nav navbar-nav navbar-right home-menu">
+                        <li>
+                            <a class='active' href='/'>HOME</a>
+                        </li>
+                        <li>
+                            <a href='#'>ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href='#'>TRACK</a>
+                        </li>
+                        <li>
+                            <a href='#'>HOW IT WORKS</a>
+                        </li>
+                        <li>
+                            <a href='#'>SUPPORT</a>
+                        </li>
+                        <li>
+                            <a class='ship-now' href='#'>SHIP NOW</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-fixed-top navbar-black" id='navbar-menu'>
+        <div class="container">
+
+    <div class='navbar-header page-scroll'>
+        <button type'button' class='navbar-toggle' data-toggle='collapse' data-target='#bs-example-navbar-collapse'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+        </button>
+        <a class='navbar-brand' href='/'><img class='nav-logo' src='./img/text-logo-dark.png' /></a>
+    </div>
+
+    <div class='collapse navbar-collapse' id='bs-example-navbar-collapse'>
+        <ul class='nav navbar-nav navbar-right'>
+            <li>
+                <a class='active' href='#'>HOME</a>
+            </li>
+            <li>
+                <a href='#'>ABOUT US</a>
+            </li>
+            <li>
+                <a href='#'>TRACK</a>
+            </li>
+            <li>
+                <a href='#'>HOW IT WORKS</a>
+            </li>
+            <li>
+                <a href='#'>SUPPORT</a>
+            </li>
+            <li>
+                <a href='#'>REGISTER</a>
+            </li>
+            <li>
+                <a href='#'>LOGIN</a>
+            </li>
+            <li>
+                <a class='ship-now' href='#'>SHIP NOW</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<div class='header-bg'>
+    <div class='container slogan-wrapper'>
+        <h2 class='banner'>Ship Sticks Calculator Challenge</h2>
+    </div>
+    <div class="col-md-12 text-center">
+        <a id='launch-btn' class="btn btn-primary calculate-btn" id="ship-now-home">Launch Calculator</a>
+    </div>
+</div>
+
+</header>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="close">×</span>
+        <h2>Calculator</h2>
+    </div>
+    <div class="modal-body">
+            <form id='calculator-form'>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <label for='length-input'>Length</label><span class='mandatory'> *</span>
+                        <input id='length-input' name='length-input' type='number' class='form-control form-margin' autofocus />
+                    </div>
+                    <div class='col-md-6'>
+                        <label for='width-input'>Width</label><span class='mandatory'> *</span>
+                        <input id='width-input' name='width-input' type='number' class='form-control form-margin' />
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <label for='height-input'>Height</label><span class='mandatory'> *</span>
+                        <input id='height-input' name='height-input' type='number' class='form-control form-margin' />
+                    </div>
+                    <div class='col-md-6'>
+                        <label for='weight-input'>Weight</label><span class='mandatory'> *</span>
+                        <input id='weight-input' name='weight-input' type='number' class='form-control form-margin' />
+                    </div>
+                </div>
+            </form>
+            <div class='row'>
+                <div class='col-md-12 text-center'>
+                    <p id='error'></p>
+                    <button onclick='calculateProduct()' class="btn btn-primary calculate-btn-full" id="calculate-now-button">Calculate</button>
+                </div>
+            </div>
+    </div>
+    <div class="modal-footer">
+            <div class='row'>
+                <div class='col-md-12 text-center'>
+                    <p id='answer'></p>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+
+<div class='container'>
+    <div class='row'>
+        <div class='col-md-12 text-center'>
+            <p id='body-answer'></p>
+        </div>
+    </div>
+</div>
+
+<div class='container'>
+    <div class='row'>
+     <div class='col-md-12 text-center'>
+        <h2>Ship Sticks Calculator Challenge</h2>
+        <h4>press the launch calculator button above to launce the calculator and determine what product is right for your shipment</h4>
+        <hr class='space' />
+     </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-2 text-center'>
+            <img class='step' src='./img/step_1.png' />
+        </div>
+        <div class='col-sm-1 text-center'>
+            <img class='margin-push' src='./img/step_separator.png' />
+        </div>
+        <div class='col-sm-2 text-center'>
+            <img class='step' src='./img/step_2.png' />
+        </div>
+        <div class='col-sm-1 text-center'>
+            <img class='margin-push' src='./img/step_separator.png' />
+        </div>
+        <div class='col-sm-2 text-center'>
+            <img class='step' src='./img/step_3.png' />
+        </div>
+        <div class='col-sm-1 text-center'>
+            <img class='margin-push' src='./img/step_separator.png' />
+        </div>
+        <div class='col-sm-2 text-center'>
+            <img class='step' src='./img/step_4.png' />
+        </div>
+    </div>
+</div>
+
+<hr class='space' />
+
+<footer class='footer'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-4'>
+                <p>Contact Me</p>
+                <p>Harrison McGuire</p>
+                <p>760-238-6194</p>
+                <p>hmcguire13@gmail.com</p>
+            </div>
+            <div class='col-md-4'>
+                <p>Social</p>
+                <p><a href='https://twitter.com/HarryMcGueeze'>@HarryMcGueeze</a></p>
+                <p><a href='https://www.linkedin.com/in/harrisonmcguire'>LinkedIn</a></p>
+                <p><a href='https://www.youtube.com/channel/UC3QmKYux59jdGJWgMopzWTw'>YouTube</a></p>
+                <p><a href='https://www.twitch.tv/harrisonmcguire'>Twitch</a></p>
+            </div>
+            <div class='col-md-4'>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-without-jquery/0.6.1/bootstrap3/bootstrap-without-jquery.min.js'></script>
+<script type='text/javascript' src='./js/main.js'></script>
+</body>
+</html>
