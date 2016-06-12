@@ -1,11 +1,23 @@
 var divtop = document.getElementById('unscrolled-menu-wrapper');
 var scrollPosition;  
+var express = require('express');
 
 var productArray = [];
 var dStrings = ["length","width", "height", "weight"];
 
 document.getElementById("unscrolled-menu-wrapper").style.visibility = "visible";
 document.getElementById("navbar-menu").style.visibility = "hidden";
+
+ //    var refresh = function () {
+	//     $http.get('/sticks').success(function(response){
+	//     	console.log('i got the data i requested');
+	//     	$scope.contactList = response;
+	//     	$scope.contact = "";
+	//     });
+	// };
+
+	// refresh();
+
 
 window.onscroll = function (e)
 {

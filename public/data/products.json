@@ -1,5 +1,4 @@
-{
-  "products": [
+[
     {
       "name": "Small Package",
       "type": "Golf",
@@ -88,5 +87,4 @@
       "height": 7,
       "weight": 25
     }
-  ]
-}
+]
