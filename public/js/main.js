@@ -7,7 +7,7 @@ var dStrings = ["length","width", "height", "weight"];
 document.getElementById("unscrolled-menu-wrapper").style.visibility = "visible";
 document.getElementById("navbar-menu").style.visibility = "hidden";
 
-
+// displays and hides navbar
 window.onscroll = function (e)
 {
     scrollPosition = document.body.scrollTop;  
@@ -20,6 +20,7 @@ window.onscroll = function (e)
     }
 }
 
+// grab data
 var obj;
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "/products", true);
@@ -30,6 +31,8 @@ xhr.onreadystatechange = function() {
 }
 xhr.send();
 
+
+// main function to calculate the answer
 function calculate(length, width, height, weight) {
 	if(length>0 && width>0 && height>0 && weight>0) {
 		productArray = []
@@ -81,6 +84,8 @@ function calculate(length, width, height, weight) {
 
 }
 
+
+// grabs the values from the input boxes and begins the calculate function. 
 function calculateProduct() {
 	if(document.getElementById('length-input').value && document.getElementById('width-input').value && document.getElementById('height-input').value && document.getElementById('weight-input').value) {
 		document.getElementById("error").style.visibility = "hidden";
@@ -109,6 +114,7 @@ function calculateProduct() {
 
 }
 
+// function to remove products from custom array that do not match the criteria
 function removeProduct(measurement, products, i, element) {
 	i = productArray.length;
 	if(i) {
@@ -123,6 +129,8 @@ function removeProduct(measurement, products, i, element) {
 	}
 }
 
+
+// modal functions to display and hide modal
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("launch-btn");
 var span = document.getElementsByClassName("close")[0];
@@ -150,6 +158,7 @@ window.onclick = function(event) {
     }
 }
 
+// modal to close the function and display answer on home page
 function closeModal() {
 	modal.style.display = "none";
 	if(document.getElementById("answer").style.visibility == "visible") {
