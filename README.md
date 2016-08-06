@@ -1,5 +1,5 @@
 # ship-sticks-calculator
-ship sticks calculator challenge question on a node.js express server using mongodb with mongoose
+ship sticks calculator challenge question on a node.js express server using mongodb with mongoose. Using HTML, CSS, and JS.
 
 Step 1. npm install
 
